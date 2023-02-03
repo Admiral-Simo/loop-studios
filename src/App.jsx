@@ -7,9 +7,9 @@ function App() {
       {Hero()}
       {/* Feature Section */}
       {Feature()}
-      {/* Creations section */}
+      {/* Creations Section */}
       {Creations()}
-      {/* Footer */}
+      {/* Footer Section */}
       {Footer()}
     </div>
   );
