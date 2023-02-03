@@ -10,52 +10,56 @@ function App() {
       {/* Creations section */}
       {Creations()}
       {/* Footer */}
-      <footer className="py-12 bg-black">
-        <div className="flex flex-col justify-between max-w-6xl mx-auto md:flex-row">
-          {/* Logo + pages */}
-          <div className="flex flex-col items-center space-y-6 font-bold text-white md:space-y-0 md:items-start">
-            {/* Logo */}
-            <Logo />
-            {/* Menu */}
-            <div className="flex flex-col space-y-4 font-light md:h-10 font-alata md:flex-row md:space-x-8 md:space-y-0">
-              <div className="group">
-                <a href="">About</a>
-                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <div className="group">
-                <a href="">Events</a>
-                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <div className="group">
-                <a href="">Products</a>
-                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <div className="group">
-                <a href="">Support</a>
-                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-              <div className="group">
-                <a href="">Careers</a>
-                <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
-              </div>
-            </div>
-          </div>
-          {/* Social Icons */}
-          <div className="flex flex-col px-4 my-5 md:my-0">
-            <div className="flex items-center justify-center space-x-5 md:justify-start">
-              <Facebook />
-              <Twitter />
-              <Pinterest />
-              <Instagram />
-            </div>
-            <p className="font-semibold text-gray-800">
-              © 2022 Loopstudios. All Rights Reserved
-            </p>
-          </div>
-        </div>
-      </footer>
+      {Footer()}
     </div>
   );
+}
+
+function Footer() {
+  return <footer className="py-12 bg-black">
+    <div className="flex flex-col justify-between max-w-6xl mx-auto md:flex-row">
+      {/* Logo + pages */}
+      <div className="flex flex-col items-center space-y-6 font-bold text-white md:space-y-0 md:items-start">
+        {/* Logo */}
+        <Logo />
+        {/* Menu */}
+        <div className="flex flex-col space-y-4 font-light md:h-10 font-alata md:flex-row md:space-x-8 md:space-y-0">
+          <div className="group">
+            <a href="">About</a>
+            <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div className="group">
+            <a href="">Events</a>
+            <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div className="group">
+            <a href="">Products</a>
+            <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div className="group">
+            <a href="">Support</a>
+            <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+          <div className="group">
+            <a href="">Careers</a>
+            <div className="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+          </div>
+        </div>
+      </div>
+      {/* Social Icons */}
+      <div className="flex flex-col px-4 my-5 md:my-0">
+        <div className="flex items-center justify-center space-x-5 md:justify-start">
+          <Facebook />
+          <Twitter />
+          <Pinterest />
+          <Instagram />
+        </div>
+        <p className="font-semibold text-gray-800">
+          © 2022 Loopstudios. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>;
 }
 
 function Instagram() {
